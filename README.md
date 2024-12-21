@@ -40,7 +40,7 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-adiciando en el archivo tailwind.config.js
+Revisar que el archivo tailwind.config.js tenga las sigientes configuraciones:
 
 ```sh
 /** @type {import('tailwindcss').Config} \*/
