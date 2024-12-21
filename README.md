@@ -4,7 +4,7 @@ Vamos a utilizar el Framework React + Vite para crear un proyecto
 
 # Instalación
 
-Para ejecutar este proyecto necesitamos intalar dependencias de noje obviamente teniendo instalado noje en nuestra computadora
+Para ejecutar este proyecto necesitamos instalar dependencias de noje obviamente teniendo instalado noje en nuestra computadora
 
 # Comandos
 
@@ -14,27 +14,27 @@ Realizamos el comando para instalar dependencia:
 npm install
 ```
 
-Realizar la instalacion de los iconos:
+Realizar la instalación de los iconos:
 
 ```sh
 npm install lucide-react
 ```
 
-Realizar la instalacion de OpenAI:
+Realizar la instalación de OpenAI:
 
 ```sh
 npm install openai
 ```
 
-Realizar la instalcion de tailwindcss:
+Realizar la instalación de tailwindcss:
 
-- comando 1:
+- Commando 1:
 
 ```sh
 npm install -D tailwindcss postcss autoprefixer
 ```
 
-- comando 2:
+- Commando 2:
 
 ```sh
 npx tailwindcss init -p
@@ -56,13 +56,13 @@ plugins: [],
 }
 ```
 
-Muy importante crear el archivo .env en la raiz del proyecto y agregar la llave de OpenAI en la variable VITE_OPENAI_API_KEY
+Muy importante crear el archivo .env en la raíz del proyecto y agregar la llave de OpenAI en la variable VITE_OPENAI_API_KEY
 
 ```sh
-VITE_OPENAI_API_KEY="Aqui va la llave de OpenAI sin comillas"
+VITE_OPENAI_API_KEY="Aquí va la llave de OpenAI sin comillas"
 ```
 
-Despues de esto podemoes ejecutar el proyecto con el comando:
+Después de esto podemos ejecutar el proyecto con el comando:
 
 ```sh
 npm run dev
