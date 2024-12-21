@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { SendHorizontal } from "lucide-react";
+import { ShoppingCart } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 export const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY;
 //Logica
@@ -128,7 +130,7 @@ const ChatInterface = () => {
       }
     }
   };
-
+  // Evento para capturar el enter de teclado
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       handleSendMessage();
@@ -139,20 +141,27 @@ const ChatInterface = () => {
   return (
     <div className="flex flex-col rounded-xl bg-gray-100 lg:mx-auto lg:w-[30%] lg:h-[90vh] lg:my-8 lg:rounded-xl lg:shadow-xl">
       {/* Header */}
-      <div className="rounded-t-xl bg-gradient-to-r from-blue-950 to-indigo-500 text-white p-4 flex items-center space-x-2 lg:rounded-t-xl">
-        <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-          <span className="text-blue-600 text-xl">
-            <img
-              src="https://static.wixstatic.com/media/0abc3f_361e29410af046ec93e78ac409a4909e%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/0abc3f_361e29410af046ec93e78ac409a4909e%7Emv2.png"
-              alt="logo Wizybot"
-            />
-          </span>
+      <div className="rounded-t-xl bg-gradient-to-r from-blue-950 to-indigo-500 text-white p-4 items-center space-x-2 lg:rounded-t-xl">
+        <div className="flex gap-4">
+          <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+            <span className="text-blue-600 text-xl">
+              <img
+                src="https://static.wixstatic.com/media/0abc3f_361e29410af046ec93e78ac409a4909e%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/0abc3f_361e29410af046ec93e78ac409a4909e%7Emv2.png"
+                alt="logo Wizybot"
+              />
+            </span>
+          </div>
+          <div className="flex justify-between">
+            <div className="flex-col">
+              <p className="text-sm text-left">Habla con </p>
+              <h1 className="text-xl font-medium">Wizybot</h1>
+            </div>
+            <div className="flex gap-4 items-center pl-40">
+              <ShoppingCart />
+              <ChevronDown className="cursor-pointer" />
+            </div>
+          </div>
         </div>
-        <div className="flex-col">
-          <p className="text-sm text-left">Habla con </p>
-          <h1 className="text-xl font-medium">Wizybot</h1>
-        </div>
-        <div> logo</div>
       </div>
       <div className="bg-gradient-to-r from-blue-950 to-indigo-500 text-white p-1 pl-8">
         <ul className="list-disc pl-5 text-green-600">

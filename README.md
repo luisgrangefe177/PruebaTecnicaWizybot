@@ -61,3 +61,9 @@ Muy importante crear el archivo .env en la raiz del proyecto y agregar la llave 
 ```sh
 VITE_OPENAI_API_KEY="Aqui va la llave de OpenAI sin comillas"
 ```
+
+Despues de esto podemoes ejecutar el proyecto con el comando:
+
+```sh
+npm run dev
+```
